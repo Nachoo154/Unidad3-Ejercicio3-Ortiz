@@ -31,6 +31,6 @@ public class Producto {
 
     private Integer stock;
 
-    private boolean estaEliminado;
+    private boolean estaEliminado = false;
 
 }

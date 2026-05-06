@@ -14,8 +14,8 @@ public abstract class CustomException extends RuntimeException {
 
     public CustomException(String message, HttpStatus status, List<String> errors) {
         super(message);
-        this.status = HttpStatus.BAD_REQUEST;
-        this.errors = List.of(message);
+        this.status = status;
+        this.errors = errors;
     }
 
 }
